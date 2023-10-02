@@ -1,5 +1,5 @@
 # authentication-app
-Essa aplicação Spring Security configura a autenticação de usuários, permitindo a geração de tokens JWT para autenticar usuários com senha correta e verifica a validade desses tokens ao acessar um endpoint protegido.
+## Essa aplicação Spring Security configura a autenticação de usuários, permitindo a geração de tokens JWT para autenticar usuários com senha correta e verifica a validade desses tokens ao acessar um endpoint protegido.
 
 A aplicação de autenticação está completamente configurada para uso. O objetivo da aplicação é demonstrar como realizar a autenticação de usuários usando o Spring Security. Temos dois endpoints: o primeiro endpoint "/api/authentication" é do tipo POST, onde esperamos um corpo com o email e a senha do usuário que está tentando se autenticar. A aplicação irá procurar o usuário no banco de dados H2 que foi configurado ao executar a aplicação. Se o usuário existir no banco de dados, será realizada a verificação da senha, que está armazenada de forma criptografada no banco. Se a senha informada estiver correta, será gerado um token JWT para o usuário em questão, com validade de 8 horas.
 
